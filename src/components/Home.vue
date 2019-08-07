@@ -220,8 +220,7 @@ main {
   right: 0;
   top: 0;
   width: 10px;
-  height: 9px;
-  padding-top: 1px;
+  height: 10px;
   border-radius: 50%/50%;
   font-size: 7px;
   color: white;
@@ -232,7 +231,7 @@ main {
   margin-right: -16px;
   margin-top: 7px;
   text-align: center;
-  vertical-align: middle;
+  vertical-align: center;
   cursor: default;
 }
 #logo {
