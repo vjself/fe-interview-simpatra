@@ -1,5 +1,6 @@
 <template>
   <div id="cart-cont">
+    <notifications group="foo" width="400px" />
     <div id="item-amount">
       <span id="cart-t">Cart Details&nbsp;&nbsp;</span>
       <span id="item-num">({{cartItems.length === 0 ? 0 : cartItems.length}} Items)</span>
@@ -92,6 +93,12 @@ export default {
       this.cartItems.forEach(e => {
         if (index === e[2]) {
           this.cartItems.splice(e, 1);
+          this.$notify({
+            group: "foo",
+            type: "warn",
+            title: "Success!",
+            text: "Item removed from cart."
+          });
         } else if (index < 1) {
           this.cartItems = [];
         }
@@ -100,6 +107,21 @@ export default {
     toggleFav: function(index) {
       this.cartItems.forEach(e => {
         if (index === e[2]) {
+          if (e[0].favorite === false) {
+            this.$notify({
+              group: "foo",
+              type: "success",
+              title: "Success!",
+              text: "Item added to favorites!"
+            });
+          } else {
+            this.$notify({
+              group: "foo",
+              type: "warn",
+              title: "Success!",
+              text: "Item removed from favorites!"
+            });
+          }
           return (e[0].favorite = !e[0].favorite);
         }
       });
@@ -234,7 +256,7 @@ export default {
   background-size: contain;
   height: 100%;
   width: 18px;
-  height: 18px;
+  height: 16px;
   z-index: 2;
 }
 

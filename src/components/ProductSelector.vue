@@ -31,6 +31,7 @@
           <span id="prod-abt">About the Product</span>
           <div id="prod-abt-dtls">{{desc}}</div>
           <button @click="addProduct()" id="btn-add-cart">ADD TO CART</button>
+          <notifications group="foo" width="400px" />
         </div>
       </div>
     </div>
@@ -127,7 +128,12 @@ export default {
             vm.cartItems.push(newArr);
           }
         });
-        alert("Item added to cart!");
+        vm.$notify({
+          group: "foo",
+          type: "success",
+          title: "Success!",
+          text: "Item has been added to the cart!"
+        });
       };
       let checkCart = function() {
         vm.cartItems.map(e => {
@@ -141,7 +147,12 @@ export default {
       checkCart();
       checkRes !== true
         ? addProductFn()
-        : alert("Item is already in the cart!");
+        : vm.$notify({
+            group: "foo",
+            type: "error",
+            title: "Warning.",
+            text: "Item is already in the cart."
+          });
     },
 
     carouselNav: function(index) {

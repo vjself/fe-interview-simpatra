@@ -2,6 +2,7 @@
   <main>
     <!-- Top DropDown Section -->
     <section id="h-section">
+      <!-- DropDown Cart -->
       <DropCart :cartItems="cart" v-show="cartToggle" />
       <div id="orange-t" v-bind:style="{ backgroundImage: 'url(' + orangeBg + ')' }">
         <div id="header">
@@ -159,7 +160,7 @@ main {
   flex-direction: column;
   width: 100%;
   height: 100%;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.466);
 }
 
 .component-fade-enter-active,
