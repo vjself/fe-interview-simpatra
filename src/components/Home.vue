@@ -342,11 +342,11 @@ main {
 #video {
   position: absolute;
   width: 933px;
-  height: 589px;
+  height: 591px;
   margin-left: 235px;
-  margin-bottom: 128px;
+  margin-bottom: 127px;
   bottom: 0;
-  z-index: 1;
+  z-index: 0;
 }
 /* Lower Section ------------------------------------------------------------------------------*/
 #bot-cont {
