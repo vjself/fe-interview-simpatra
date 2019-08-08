@@ -31,7 +31,7 @@
           <span id="prod-abt">About the Product</span>
           <div id="prod-abt-dtls">{{desc}}</div>
           <button @click="addProduct()" id="btn-add-cart">ADD TO CART</button>
-          <notifications group="foo" width="400px" />
+          <notifications group="foo" width="400px" max="3" />
         </div>
       </div>
     </div>
