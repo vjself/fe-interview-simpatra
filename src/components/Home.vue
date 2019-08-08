@@ -21,15 +21,15 @@
             <div id="cart-num-i">{{cart.length === 0 ? 0 : cart.length}}</div>
           </div>
         </div>
-      </div>
-      <div id="top-p">
-        <div class="elevate">
-          <span class="bolder">Elevate</span> Your Practice
-          <span class="bolder">Effectively</span>
-        </div>
-        <div id="elevate-p">
-          Add revenue to your practice. Utilize one platform and our technology to take your practice to the next level.
-          <br />Simpatra has created marketing tools and packages that work for you while you care for your patients.
+        <div id="top-p">
+          <div class="elevate">
+            <span class="bolder">Elevate</span> Your Practice
+            <span class="bolder">Effectively</span>
+          </div>
+          <div id="elevate-p">
+            Add revenue to your practice. Utilize one platform and our technology to take your practice to the next level.
+            <br />Simpatra has created marketing tools and packages that work for you while you care for your patients.
+          </div>
         </div>
       </div>
     </section>
@@ -162,17 +162,14 @@ main {
   height: 100%;
   background-color: rgba(255, 255, 255, 0.466);
 }
-
 .component-fade-enter-active,
 .component-fade-leave-active {
   transition: opacity 0.3s ease;
 }
-
 .component-fade-enter,
 .component-fade-leave-to {
   opacity: 0;
 }
-
 #orange-t {
   height: 1000px;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 56%, 0 100%);
@@ -181,9 +178,7 @@ main {
   background-position: center;
   z-index: -1;
 }
-
 /*Header------------------------------------------------------------------------------*/
-
 #h-section {
   height: 1050px;
 }

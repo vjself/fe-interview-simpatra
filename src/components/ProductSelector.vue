@@ -1,4 +1,4 @@
-  <template>
+<template>
   <div id="product-s-cont" @mouseover="stopRotation()">
     <div id="num-container">
       <div
@@ -114,7 +114,6 @@ export default {
       });
       this.currentProduct = newArr;
     },
-
     //Addproduct after checking cart for already existing.
     addProduct: function() {
       let vm = this;
@@ -155,11 +154,9 @@ export default {
             text: "Item is already in the cart."
           });
     },
-
     carouselNav: function(index) {
       this.currentNumber = index;
     },
-
     //Set products into carousel.
     currentImage: function() {
       let val;
@@ -206,17 +203,14 @@ export default {
       });
       this.name = val;
     },
-
     // Carousel Functionality
     startRotation: function() {
       this.timer = setInterval(this.next, 3000);
     },
-
     stopRotation: function() {
       clearTimeout(this.timer);
       this.timer = null;
     },
-
     next: function() {
       if (this.currentNumber >= this.products.length) {
         this.currentNumber = 1;
@@ -255,7 +249,6 @@ export default {
   margin-top: 20px;
   padding: 5px 20px;
 }
-
 .num {
   height: 60px;
   width: 60px;
@@ -267,11 +260,9 @@ export default {
   color: white;
   font-size: 18px;
 }
-
 .num:hover {
   cursor: pointer;
 }
-
 #btn-arrow-r {
   background: none;
   position: absolute;
@@ -279,30 +270,25 @@ export default {
   height: 150px;
   width: 100px;
   background: transparent;
-
   border: none;
   right: 0;
 }
-
 #btn-arrow-l {
   background: none;
   position: absolute;
   object-fit: center;
   height: 150px;
   width: 100px;
-
   background: transparent;
   border: none;
   left: 0;
 }
-
 #btn-arrow-l:hover,
 #btn-arrow-r:hover {
   transform: scale(0.7);
   transition: 0.2s;
   cursor: pointer;
 }
-
 #img-cont {
   display: flex;
   justify-content: center;
@@ -311,14 +297,12 @@ export default {
   height: 650px;
   width: 450px;
 }
-
 #product-cont {
   height: 80%;
   width: 100%;
   margin-left: 100px;
   object-fit: contain;
 }
-
 #prod-dtls {
   display: flex;
   position: relative;
@@ -327,7 +311,6 @@ export default {
   height: 465px;
   margin-right: 100px;
 }
-
 #sku {
   font-weight: 700;
   font-size: 22px;
@@ -369,7 +352,6 @@ export default {
   height: 50px;
   background-color: rgba(235, 66, 0, 0.801);
 }
-
 #btn-add-cart:hover {
   background-color: rgba(255, 156, 42, 0.897);
   cursor: pointer;

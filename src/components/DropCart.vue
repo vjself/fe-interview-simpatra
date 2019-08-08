@@ -140,7 +140,7 @@ export default {
   background-color: white;
   z-index: 1;
   margin-top: 150px;
-  margin-right: 500px;
+  margin-right: 100px;
   width: 450px;
   box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.644);
 }
