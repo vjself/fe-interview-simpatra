@@ -1,5 +1,5 @@
   <template>
-  <div id="product-s-cont">
+  <div id="product-s-cont" @mouseover="stopRotation()">
     <div id="num-container">
       <div
         class="num"
@@ -75,6 +75,7 @@ export default {
   mounted: function() {
     this.$nextTick(function() {
       this.getProducts();
+      this.startRotation();
     });
   },
   watch: {
@@ -207,14 +208,14 @@ export default {
     },
 
     // Carousel Functionality
-    // startRotation: function() {
-    //   this.timer = setInterval(this.next, 3000);
-    // },
+    startRotation: function() {
+      this.timer = setInterval(this.next, 3000);
+    },
 
-    // stopRotation: function() {
-    //   clearTimeout(this.timer);
-    //   this.timer = null;
-    // },
+    stopRotation: function() {
+      clearTimeout(this.timer);
+      this.timer = null;
+    },
 
     next: function() {
       if (this.currentNumber >= this.products.length) {
