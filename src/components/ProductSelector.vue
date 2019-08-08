@@ -1,5 +1,5 @@
 <template>
-  <div id="product-s-cont" @mouseover="stopRotation()">
+  <div id="product-s-cont" @mouseover="stopRotation()" @mouseleave="startRotation()">
     <div id="num-container">
       <div
         class="num"

@@ -298,7 +298,6 @@ export default {
   transition: 0.2s;
   transform: scale(1.025);
   transition: 0.2s;
-
   cursor: pointer;
 }
 
