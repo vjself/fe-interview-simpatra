@@ -232,7 +232,6 @@ export default {
 #product-s-cont {
   display: flex;
   padding: 40px;
-  width: 90%;
   position: relative;
   align-items: center;
   justify-content: space-between;
@@ -247,7 +246,7 @@ export default {
   top: 0;
   right: 0;
   margin-top: 20px;
-  margin-right: 220px;
+  margin-right: 275px;
   padding: 5px 20px;
 }
 .num {

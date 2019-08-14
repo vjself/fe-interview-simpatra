@@ -359,10 +359,10 @@ main {
   margin-bottom: -250px;
 }
 #drive {
-  height: 625px;
-  width: 700px;
-  margin-left: 1100px;
-  margin-top: 70px;
+  height: 550px;
+  width: 600px;
+  margin-left: 1050px;
+  margin-top: 100px;
   position: absolute;
   z-index: -2;
   object-fit: fill;
