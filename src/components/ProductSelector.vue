@@ -31,7 +31,7 @@
           <span id="prod-abt">About the Product</span>
           <div id="prod-abt-dtls">{{desc}}</div>
           <button @click="addProduct()" id="btn-add-cart">ADD TO CART</button>
-          <notifications group="foo" width="400px" max="3" />
+          <notifications group="foo" width="400px" />
         </div>
       </div>
     </div>
@@ -232,6 +232,7 @@ export default {
 #product-s-cont {
   display: flex;
   padding: 40px;
+  width: 90%;
   position: relative;
   align-items: center;
   justify-content: space-between;
@@ -245,8 +246,8 @@ export default {
   height: 70px;
   top: 0;
   right: 0;
-  margin-right: 375px;
   margin-top: 20px;
+  margin-right: 220px;
   padding: 5px 20px;
 }
 .num {
@@ -313,6 +314,9 @@ export default {
 }
 #sku {
   font-weight: 700;
+  margin-left: 50px;
+  height: 410px;
+  overflow: scroll;
   font-size: 22px;
 }
 #prod-abt {

@@ -1,6 +1,6 @@
 <template>
   <div id="cart-cont">
-    <notifications group="foo" width="400px" max="3" />
+    <notifications group="foo" width="400px" />
     <div id="item-amount">
       <span id="cart-t">Cart Details&nbsp;&nbsp;</span>
       <span id="item-num">({{cartItems.length === 0 ? 0 : cartItems.length}} Items)</span>
