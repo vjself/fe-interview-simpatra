@@ -23,5 +23,6 @@ export default {
   justify-content: center;
   max-width: 1920px;
   height: 5040px;
+  overflow-x: hidden;
 }
 </style>
